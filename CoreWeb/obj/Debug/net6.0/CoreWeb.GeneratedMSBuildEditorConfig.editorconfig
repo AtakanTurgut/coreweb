@@ -9,185 +9,185 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CoreWeb
 build_property.RootNamespace = CoreWeb
-build_property.ProjectDir = c:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb\
+build_property.ProjectDir = C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb
+build_property.MSBuildProjectDirectory = C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Categories/Create.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Categories/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Categories/Delete.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Categories/Details.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Categories/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Categories/Edit.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Categories/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Categories/Index.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Contacts/Create.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Contacts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Contacts/Delete.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Contacts/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Contacts/Details.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Contacts/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Contacts/Edit.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Contacts/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Contacts/Index.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Contacts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29udGFjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Default/Index.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Default/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/News/Create.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/News/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmV3c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/News/Delete.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/News/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmV3c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/News/Details.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/News/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmV3c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/News/Edit.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/News/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmV3c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/News/Index.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/News/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmV3c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Posts/Create.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Posts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Posts/Delete.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Posts/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Posts/Details.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Posts/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Posts/Edit.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Posts/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Posts/Index.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Posts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9zdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Shared/Error.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Shared/LeftMenu.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Shared/LeftMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXExlZnRNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Sliders/Create.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Sliders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Sliders/Delete.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Sliders/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Sliders/Details.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Sliders/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Sliders/Edit.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Sliders/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Sliders/Index.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Sliders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Users/Create.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Users/Delete.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Users/Details.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Users/Edit.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Users/Index.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/_ViewImports.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/_ViewStart.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/Home/Index.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/Home/Privacy.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/Shared/Error.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/_ViewImports.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/_ViewStart.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-sk94e8m35i
 
-[c:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/Shared/_Layout.cshtml]
+[C:/Users/Excalibur/Desktop/coreWeb/CoreWeb/CoreWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kmq7gjd0op

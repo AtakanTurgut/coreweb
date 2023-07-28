@@ -76,11 +76,14 @@ If an error like the following occurs:
 ```
 Try adding `TrustServerCertificate=True;` to your connection string in `CoreWeb\Data\DatabaseContext.cs`. [[source]](https://learn.microsoft.com/en-us/answers/questions/663116/a-connection-was-successfully-established-with-the)
 ```c#
-protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(
-                @"Server=DESKTOP-R6K64T9\SQLEXPRESS;Database=CoreWebDB;Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True;"
-            );
-        }
+public class DatabaseContext : DbContext
+{
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlServer(
+            @"Server=DESKTOP-R6K64T9\SQLEXPRESS;Database=CoreWebDB;Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True;"
+        );
+    }
+}
 ```
 ... 
