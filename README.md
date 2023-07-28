@@ -7,7 +7,6 @@ You can import the MSSQL database: `CoreWebDB.bacpac`
 <br>
 
 ## Used Packages
----- 
 
 ### Client-Side Library -> Manage Client-Side Libraries
 ![](/pictures/clientside.png)
