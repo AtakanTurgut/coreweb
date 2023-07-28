@@ -7,6 +7,8 @@ You can import the MSSQL database: `CoreWebDB.bacpac`
 <br>
 
 ## Used Packages
+---- 
+
 ### Client-Side Library -> Manage Client-Side Libraries
 ![](/pictures/clientside.png)
 - Some packages can be installed from the "[Manage Client-Side Libraries](https://learn.microsoft.com/en-us/aspnet/core/client-side/libman/libman-vs?view=aspnetcore-7.0)" with the help of the `Solution Explorer > ProjectName Right Click > Add > Client-Side Library > Library + Install`.
@@ -17,6 +19,8 @@ You can import the MSSQL database: `CoreWebDB.bacpac`
     >    jquery@3.7.0
 ```
 ![](/pictures/addclientside.PNG)
+
+---- 
 
 ### NuGet Gallery
 ![](/pictures/nuget.png)
@@ -80,3 +84,4 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             );
         }
 ```
+... 
