@@ -74,7 +74,7 @@ If an error like the following occurs:
     A connection was successfully established with the server, but then an error occurred during the login process. 
     (provider: SSL Provider, error: 0 - Sertifika zinciri güvenilmeyen bir yetkili tarafından verildi.)
 ```
-Try adding `TrustServerCertificate=True;` to your connection string in `CoreWeb\Data\DatabaseContext.cs`. [[source]](https://learn.microsoft.com/en-us/answers/questions/663116/a-connection-was-successfully-established-with-the)
+Try adding `TrustServerCertificate=True;` to your connection string in "[CoreWeb\Data\DatabaseContext.cs](https://github.com/AtakanTurgut/coreweb/blob/main/CoreWeb/Data/DatabaseContext.cs)". [[source]](https://learn.microsoft.com/en-us/answers/questions/663116/a-connection-was-successfully-established-with-the)
 ```c#
 public class DatabaseContext : DbContext
 {
