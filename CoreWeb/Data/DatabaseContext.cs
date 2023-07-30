@@ -16,14 +16,14 @@ namespace CoreWeb.Data
         {
             
         }
-
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
                 @"Server=DESKTOP-R6K64T9\SQLEXPRESS;Database=CoreWebDB;Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True;"
             );
         }
-
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().HasData(

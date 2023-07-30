@@ -14,11 +14,11 @@ namespace Entities
         [Display(Name = "Başlık"), StringLength(150)]
         public string Name { get; set; }
         [Display(Name = "Açıklama"), DataType(DataType.MultilineText), StringLength(250)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
         [StringLength(150)]
-        public string Link { get; set; }
+        public string? Link { get; set; }
         [Display(Name = "Resim")]
-        public string Image { get; set; }
+        public string? Image { get; set; }
 
     }
 }

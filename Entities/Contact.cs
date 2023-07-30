@@ -16,7 +16,7 @@ namespace Entities
         [EmailAddress, StringLength(50)]
         public string Email { get; set; }
         [Display(Name = "Telefon Numaranız"), StringLength(20)]
-        public string Phone { get; set; }
+        public string? Phone { get; set; }
         [Display(Name = "Mesajınız"), StringLength(175)]
         public string Message { get; set; }
         [Display(Name = "Tarihi"), ScaffoldColumn(false)]

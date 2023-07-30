@@ -1,4 +1,5 @@
-﻿using CoreWeb.Models;
+﻿using BL;
+using CoreWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -8,6 +9,11 @@ namespace CoreWeb.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        CategoryManager categoryManager = new CategoryManager();
+        SliderManager sliderManager = new SliderManager();
+        NewsManager newsManager = new NewsManager();
+        PostManager postManager = new PostManager();
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -15,7 +21,15 @@ namespace CoreWeb.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var model = new HomePageViewModel()
+            {
+                Categories = categoryManager.GetAll(),
+                Sliders = sliderManager.GetAll(),
+                News = newsManager.GetAll(),
+                Posts = postManager.GetAll(),
+            };
+
+            return View(model);
         }
 
         public IActionResult Privacy()

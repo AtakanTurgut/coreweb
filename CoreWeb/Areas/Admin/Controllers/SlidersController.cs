@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CoreWeb.Data;
 using Entities;
+using CoreWeb.Utils;
 
 namespace CoreWeb.Areas.Admin.Controllers
 {
@@ -57,10 +58,12 @@ namespace CoreWeb.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,Link,Image")] Slider slider)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,Link,Image")] Slider slider, IFormFile Image)
         {
             if (ModelState.IsValid)
             {
+                slider.Image = FileHelper.FileLoader(Image);
+
                 _context.Add(slider);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -89,7 +92,7 @@ namespace CoreWeb.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Link,Image")] Slider slider)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Link,Image")] Slider slider, IFormFile Image, bool neImageDelete)
         {
             if (id != slider.Id)
             {
@@ -100,6 +103,17 @@ namespace CoreWeb.Areas.Admin.Controllers
             {
                 try
                 {
+                    if (neImageDelete)
+                    {
+                        FileHelper.FileTerminator(slider.Image);
+                        slider.Image = string.Empty;
+                    }
+
+                    if (Image != null)
+                    {
+                        slider.Image = FileHelper.FileLoader(Image);
+                    }
+
                     _context.Update(slider);
                     await _context.SaveChangesAsync();
                 }

@@ -1,0 +1,17 @@
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\bin\Debug\net6.0\DAL.runtimeconfig.json
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\bin\Debug\net6.0\DAL.dll
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\bin\Debug\net6.0\DAL.pdb
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\bin\Debug\net6.0\Entities.dll
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\bin\Debug\net6.0\Entities.pdb
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\obj\Debug\net6.0\DAL.csproj.CopyComplete
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\obj\Debug\net6.0\DAL.dll
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\obj\Debug\net6.0\DAL.pdb
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\DAL\obj\Debug\net6.0\ref\DAL.dll

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Entities.Post>
+
+@{
+    ViewData["Title"] = "Gönderiler";
+}
+
+<h2 class="text-center">Gönderiler</h2>
+@foreach (var item in Model)
+{
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1"><span class="text-body-secondary">@item.Name</span></h2>
+            <p class="lead">@item.Content</p>
+        </div>
+        <div class="col-md-5">
+            <a href="/Post/Detail/@item.Id">
+                <img src="/Image/@item.Image" alt="@item.Name" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="350" height="300" />
+            </a>
+        </div>
+    </div>
+}

@@ -271,3 +271,7 @@ C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb\bin\Debug\net6.0\Microsoft.En
 C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb\bin\Debug\net6.0\Entities.dll
 C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb\bin\Debug\net6.0\Entities.pdb
 C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb\obj\Debug\net6.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb\bin\Debug\net6.0\BL.dll
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb\bin\Debug\net6.0\DAL.dll
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb\bin\Debug\net6.0\BL.pdb
+C:\Users\Excalibur\Desktop\coreWeb\CoreWeb\CoreWeb\bin\Debug\net6.0\DAL.pdb

@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace Entities
 {
-    public class User
+    public class User : IEntity
     {
         public int Id { get; set; }
         [Display(Name = "Adınız"), Required, StringLength(50)]
@@ -20,7 +20,7 @@ namespace Entities
         [Display(Name = "Şifre"), Required, StringLength(150)]
         public string Password { get; set; }
         [EmailAddress, StringLength(50)]
-        public string Email { get; set; }
+        public string? Email { get; set; }
         [Display(Name = "Telefon Numaranız"), StringLength(20)]
         public string? Phone { get; set; }
         [Display(Name = "Durum")]

@@ -1,4 +1,5 @@
 using CoreWeb.Data;
+using DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -7,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer());
+builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer());  // Admin panel context
+builder.Services.AddDbContext<DataBaseContext>(); // DAL context
 
 builder.Services.AddDistributedMemoryCache();
 

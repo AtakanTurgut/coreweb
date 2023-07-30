@@ -8,11 +8,11 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="ParentId" class="control-label"></label>
-                <input asp-for="ParentId" class="form-control" />
+                <select asp-for="ParentId" class="form-control" asp-items="ViewBag.ParentId"><option value="0">Ana Katagori</option></select>
                 <span asp-validation-for="ParentId" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -27,17 +27,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="Image" class="control-label"></label>
-                <input asp-for="Image" class="form-control" />
+                <input asp-for="Image" class="form-control" type="file"/>
                 <span asp-validation-for="Image" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Ekle" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-sm btn-outline">Listeye Dön</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index" class="btn btn-sm btn-outline">Listeye Dön</a>
 </div>
 

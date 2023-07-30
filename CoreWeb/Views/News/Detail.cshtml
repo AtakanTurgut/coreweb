@@ -1,0 +1,17 @@
+﻿@model Entities.News
+
+@{
+    ViewData["Title"] = Model.Name + " Haber Detayı";
+}
+<div class="container">
+    <h2 class="featurette-heading fw-normal lh-1 text-center"><span class="text-body-secondary">@Model.Name</span></h2>
+    <hr class="featurette-divider"> 
+    <div class="row featurette">
+        <div class="col-md-7">
+            <img src="/Image/@Model.Image" alt="@Model.Name" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="350" height="300" />
+        </div>
+        <div class="col-md-5">
+            <p class="lead">@Model.Content</p>
+        </div>
+    </div>
+</div>

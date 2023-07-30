@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CoreWeb.Data;
 using Entities;
+using CoreWeb.Utils;
 
 namespace CoreWeb.Areas.Admin.Controllers
 {
@@ -49,7 +50,7 @@ namespace CoreWeb.Areas.Admin.Controllers
         // GET: Admin/Posts/Create
         public IActionResult Create()
         {
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Description");
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
             return View();
         }
 
@@ -58,15 +59,18 @@ namespace CoreWeb.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Content,Image,CategoryId")] Post post)
+        public async Task<IActionResult> Create([Bind("Id,Name,Content,Image,CategoryId")] Post post, IFormFile Image)
         {
+            
             if (ModelState.IsValid)
             {
+                post.Image = FileHelper.FileLoader(Image);
+
                 _context.Add(post);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Description", post.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", post.CategoryId);
             return View(post);
         }
 
@@ -83,7 +87,7 @@ namespace CoreWeb.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Description", post.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", post.CategoryId);
             return View(post);
         }
 
@@ -92,7 +96,7 @@ namespace CoreWeb.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Content,Image,CategoryId")] Post post)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Content,Image,CategoryId")] Post post, IFormFile Image, bool neImageDelete)
         {
             if (id != post.Id)
             {
@@ -103,6 +107,17 @@ namespace CoreWeb.Areas.Admin.Controllers
             {
                 try
                 {
+                    if (!string.IsNullOrEmpty(post.Image) && neImageDelete)
+                    {
+                        FileHelper.FileTerminator(post.Image);
+                        post.Image = string.Empty;
+                    }
+
+                    if (Image != null)
+                    {
+                        post.Image = FileHelper.FileLoader(Image);
+                    }
+
                     _context.Update(post);
                     await _context.SaveChangesAsync();
                 }
@@ -119,7 +134,7 @@ namespace CoreWeb.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Description", post.CategoryId);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", post.CategoryId);
             return View(post);
         }
 
@@ -156,14 +171,14 @@ namespace CoreWeb.Areas.Admin.Controllers
             {
                 _context.Posts.Remove(post);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool PostExists(int id)
         {
-          return (_context.Posts?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Posts?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

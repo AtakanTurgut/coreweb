@@ -5,6 +5,42 @@
       "PackagePath": "staticwebassets\\CoreWeb.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\coreWeb\\CoreWeb\\CoreWeb\\wwwroot\\Image\\doga1.jpg",
+      "PackagePath": "staticwebassets\\Image\\doga1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\coreWeb\\CoreWeb\\CoreWeb\\wwwroot\\Image\\doga2.jpeg",
+      "PackagePath": "staticwebassets\\Image\\doga2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\coreWeb\\CoreWeb\\CoreWeb\\wwwroot\\Image\\doga2.jpg",
+      "PackagePath": "staticwebassets\\Image\\doga2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\coreWeb\\CoreWeb\\CoreWeb\\wwwroot\\Image\\doga3.jpg",
+      "PackagePath": "staticwebassets\\Image\\doga3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\coreWeb\\CoreWeb\\CoreWeb\\wwwroot\\Image\\fare.jpg",
+      "PackagePath": "staticwebassets\\Image\\fare.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\coreWeb\\CoreWeb\\CoreWeb\\wwwroot\\Image\\kasalar.png",
+      "PackagePath": "staticwebassets\\Image\\kasalar.png"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\coreWeb\\CoreWeb\\CoreWeb\\wwwroot\\Image\\klavyeIisikli.jpg",
+      "PackagePath": "staticwebassets\\Image\\klavyeIisikli.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\coreWeb\\CoreWeb\\CoreWeb\\wwwroot\\Image\\klavyeIisikli2.jpg",
+      "PackagePath": "staticwebassets\\Image\\klavyeIisikli2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Excalibur\\Desktop\\coreWeb\\CoreWeb\\CoreWeb\\wwwroot\\Image\\monitor.jpg",
+      "PackagePath": "staticwebassets\\Image\\monitor.jpg"
+    },
+    {
       "Id": "C:\\Users\\Excalibur\\Desktop\\coreWeb\\CoreWeb\\CoreWeb\\wwwroot\\Templates\\admin\\CHANGELOG.md",
       "PackagePath": "staticwebassets\\Templates\\admin\\CHANGELOG.md"
     },

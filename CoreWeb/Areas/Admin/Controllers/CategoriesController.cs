@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CoreWeb.Data;
 using Entities;
+using CoreWeb.Utils;
 
 namespace CoreWeb.Areas.Admin.Controllers
 {
@@ -49,6 +50,7 @@ namespace CoreWeb.Areas.Admin.Controllers
         // GET: Admin/Categories/Create
         public IActionResult Create()
         {
+            ViewData["ParentId"] = new SelectList(_context.Categories, "Id", "Name");
             return View();
         }
 
@@ -57,10 +59,12 @@ namespace CoreWeb.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ParentId,Name,Description,Image")] Category category)
+        public async Task<IActionResult> Create([Bind("Id,ParentId,Name,Description,Image")] Category category, IFormFile Image)
         {
             if (ModelState.IsValid)
             {
+                category.Image = FileHelper.FileLoader(Image);
+
                 _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -81,6 +85,8 @@ namespace CoreWeb.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+
+            ViewData["ParentId"] = new SelectList(_context.Categories, "Id", "Name");
             return View(category);
         }
 
@@ -89,7 +95,7 @@ namespace CoreWeb.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,ParentId,Name,Description,Image")] Category category)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,ParentId,Name,Description,Image")] Category category, IFormFile Image, bool neImageDelete)
         {
             if (id != category.Id)
             {
@@ -100,6 +106,17 @@ namespace CoreWeb.Areas.Admin.Controllers
             {
                 try
                 {
+                    if (neImageDelete)
+                    {
+                        FileHelper.FileTerminator(category.Image);
+                        category.Image = string.Empty;
+                    }
+
+                    if (Image != null)
+                    {
+                        category.Image = FileHelper.FileLoader(Image);
+                    }
+
                     _context.Update(category);
                     await _context.SaveChangesAsync();
                 }
