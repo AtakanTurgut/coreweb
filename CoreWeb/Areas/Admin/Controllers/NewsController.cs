@@ -8,10 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using CoreWeb.Data;
 using Entities;
 using CoreWeb.Utils;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CoreWeb.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"), Authorize]
     public class NewsController : Controller
     {
         private readonly DatabaseContext _context;

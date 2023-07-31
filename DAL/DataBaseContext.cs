@@ -26,7 +26,13 @@ namespace DAL
         {
             optionsBuilder.UseSqlServer(
                 @"Server=DESKTOP-R6K64T9\SQLEXPRESS;Database=CoreWebDB;Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True;"
-            );
+            );  // local için
+
+            /*
+            optionsBuilder.UseSqlServer(
+                @"Server=DESKTOP-R6K64T9\SQLEXPRESS;Database=CoreWebDB;Uid=KullaniciAdi;Pwd=SIFRE;MultipleActiveResultSets=True;"
+            );  // canlı için
+            */
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

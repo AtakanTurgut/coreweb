@@ -7,9 +7,17 @@ namespace CoreWeb.Controllers
     {
         PostManager postManager = new PostManager();
 
-        public IActionResult Index()
+        public IActionResult Index(int? id)
         {
-            return View(postManager.GetAll());
+            if (id == null)
+            {
+                return View(postManager.GetAll());
+            }
+            else
+            {
+                return View(postManager.GetAll(c => c.CategoryId == id));
+            }
+
         }
 
         public IActionResult Detail(int id)

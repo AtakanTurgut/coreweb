@@ -1,0 +1,91 @@
+﻿@model Entities.Contact
+
+@{
+    ViewData["Title"] = "İletişim";
+}
+
+<h4>İletişim</h4>
+<hr />
+<div class="row">
+    <div class="col-md-5">
+        <form asp-action="Contact" id="contact_form">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label"></label>
+                <input asp-for="Message" class="form-control" />
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3">
+                @*<input type="submit" value="Gönder" class="btn btn-primary" />*@
+                <input id="button" type="button" value="Gönder" onclick="contact_form()" class="btn btn-primary" />
+
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <p>Adres : Denizli / Türkiye</p>
+        <p>Telefon : 0543 000 00 00</p>
+        <p>Email : info@coreweb.co</p>
+    </div>
+</div>
+
+@{
+    if (TempData["Message"] != null)
+    {
+        <div class="alert alert-info">
+            @TempData["Message"]
+        </div>
+    }
+}
+
+<div id="result" class="alert alert-info" style="display:none">
+
+</div>
+
+@section Scripts {
+    <script>
+        function contact_form() {
+            var nameSurname = $("#Name").val();
+            var email = $("#Email").val();
+            var phone = $("#Phone").val();
+            var message = $("#Message").val();
+
+            var messagej = {
+                "Name": nameSurname,
+                "Email": email,
+                "Phone": phone,
+                "Message": message,
+            };
+
+            $.ajax({
+                method: "POST",
+                url: "/Home/Contact",
+                type: "json",
+                data: messagej,
+                success: function (data) {
+                    document.getElementById("contact_form").reset();
+                    $("#result").show().html("Mesajınız Başarıyla Gönderilmiştir!").delay("5000").fadeOut();
+                },
+                error: function (err) {
+                    $("#result").show().removeClass("alert alert-info").addClass("alert alert-danger")
+                    .html("Hata Oluştu! Mesajınız Gönderilemedi!").delay("7000").fadeOut();
+                }
+            });
+        }
+    </script>
+}

@@ -1,5 +1,7 @@
 ﻿using BL;
 using CoreWeb.Models;
+using CoreWeb.Utils;
+using Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -13,6 +15,7 @@ namespace CoreWeb.Controllers
         SliderManager sliderManager = new SliderManager();
         NewsManager newsManager = new NewsManager();
         PostManager postManager = new PostManager();
+        ContactManager contactManager = new ContactManager();
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -35,6 +38,37 @@ namespace CoreWeb.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Contact(Contact contact)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    contact.CreateDate = DateTime.Now;
+                    //var mailSuccess = MailHelper.SendMail(contact);   Mail gönderme
+                    var result = contactManager.Add(contact);
+
+                    if (result > 0)
+                    {
+                        TempData["Message"] = "Mesajınız Başarıyla Gönderilmiştir!";
+                        return RedirectToAction("Contact");
+                    }
+                }
+                catch (Exception)
+                {
+                    TempData["Message"] = "Hata Oluştu! Mesajınız Gönderilemedi!";
+                }
+            }
+
+            return View(contact);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

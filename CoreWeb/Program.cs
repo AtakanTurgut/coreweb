@@ -1,5 +1,6 @@
 using CoreWeb.Data;
 using DAL;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -10,6 +11,11 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer());  // Admin panel context
 builder.Services.AddDbContext<DataBaseContext>(); // DAL context
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(p =>
+{
+    p.LoginPath = "/Admin/Login";
+});
 
 builder.Services.AddDistributedMemoryCache();
 
@@ -36,8 +42,9 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseSession();
 
-app.UseAuthorization();
-app.UseAuthentication();
+app.UseAuthentication();    //  Oturum açma iþlemleri
+app.UseAuthorization();     //  Yetki kontrolü iþlemleri
+// Oturum açmadan yetkilendirme kontrolü yapýlamaz.
 
 app.MapControllerRoute(
             name: "admin",

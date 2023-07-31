@@ -11,15 +11,15 @@ namespace Entities
     public class Contact : IEntity
     {
         public int Id { get; set; }
-        [Display(Name = "Adınız Soyadınız"), Required, StringLength(50)]
+        [Display(Name = "Ad Soyad"), Required, StringLength(50)]
         public string Name { get; set; }
         [EmailAddress, StringLength(50)]
         public string Email { get; set; }
-        [Display(Name = "Telefon Numaranız"), StringLength(20)]
+        [Display(Name = "Telefon Numarası"), StringLength(20)]
         public string? Phone { get; set; }
-        [Display(Name = "Mesajınız"), StringLength(175)]
+        [Display(Name = "Mesaj"), StringLength(175)]
         public string Message { get; set; }
-        [Display(Name = "Tarihi"), ScaffoldColumn(false)]
+        [Display(Name = "Gönderilme Tarihi"), ScaffoldColumn(false)]
         public DateTime CreateDate { get; set; }
     }
 }

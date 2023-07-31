@@ -1,13 +1,11 @@
 ﻿@model Entities.Contact
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "İletişim Bilgileri";
 }
 
-<h1>Details</h1>
-
 <div>
-    <h4>Contact</h4>
+    <h4>İletişim Bilgisi Detayları</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -36,7 +34,8 @@
         </dd>
     </dl>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div class="form-group">
+    <a asp-action="Index" class="btn btn-sm btn-outline"> Form Takip Sayfası</a>
+    <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-sm btn-danger">Sil</a>
+    <a asp-area="" asp-controller="Admin" asp-action="Default" class="btn btn-sm btn-outline">Admin Paneline Dön</a>
 </div>

@@ -8,10 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using CoreWeb.Data;
 using Entities;
 using CoreWeb.Utils;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CoreWeb.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"), Authorize]
     public class CategoriesController : Controller
     {
         private readonly DatabaseContext _context;
@@ -106,6 +107,8 @@ namespace CoreWeb.Areas.Admin.Controllers
             {
                 try
                 {
+
+
                     if (neImageDelete)
                     {
                         FileHelper.FileTerminator(category.Image);
