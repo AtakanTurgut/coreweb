@@ -33,7 +33,7 @@ Use this user name and password for the admin page.
 The project runs on "[localhost:?/](https://localhost:44329/)".
 
 ---- 
-### Projects    =>    Reference Manager
+### [Projects](https://github.com/AtakanTurgut/coreweb/blob/main/CoreWeb/Program.cs)    =>    Reference Manager
 Data Access Layer (DAL) => Entities
 <br />
 Business Layer (BL)     => DAL + Entities
