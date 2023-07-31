@@ -34,11 +34,9 @@ The project runs on "[localhost:?/](https://localhost:44329/)".
 
 ---- 
 ### Projects    =>    Reference Manager
-Data Access Layer (DAL) => Entities
-<br />
-Business Layer (BL)     => DAL + Entities
-<br />
-CoreWeb (Presentation)  => BL + Entities
+    Data Access Layer (DAL) => Entities
+    Business Layer (BL)     => DAL + Entities
+    CoreWeb (Presentation)  => BL + Entities
 
 ---- 
 ## [Program.cs](https://github.com/AtakanTurgut/coreweb/blob/main/CoreWeb/Program.cs) highlights for .Net 6.0 
