@@ -33,7 +33,7 @@ Use this user name and password for the admin page.
 The project runs on "[localhost:?/](https://localhost:44329/)".
 
 ---- 
-### [Projects](https://github.com/AtakanTurgut/coreweb/blob/main/CoreWeb/Program.cs)    =>    Reference Manager
+### Projects    =>    Reference Manager
 Data Access Layer (DAL) => Entities
 <br />
 Business Layer (BL)     => DAL + Entities
@@ -41,7 +41,7 @@ Business Layer (BL)     => DAL + Entities
 CoreWeb (Presentation)  => BL + Entities
 
 ---- 
-## Program.cs highlights for .Net 6.0 
+## [Program.cs](https://github.com/AtakanTurgut/coreweb/blob/main/CoreWeb/Program.cs) highlights for .Net 6.0 
 ```c#
 builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer());  // Admin panel context
 builder.Services.AddDbContext<DataBaseContext>(); // DAL context
