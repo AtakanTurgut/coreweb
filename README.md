@@ -2,7 +2,7 @@
 
 ## CoreWeb Api Addresses
 [ASP.NET Core API](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio) is an open-source, cross-platform web API framework developed by Microsoft. It is built on top of the .NET Core runtime and can run on various platforms such as Windows, macOS, and Linux.
-<br>
+<br />
 If we want to start the project with [Microsoft Visual Studio](https://visualstudio.microsoft.com/), we start the project by right-clicking on the "[CoreWeb\Views\Home\Index.cshtml](https://github.com/AtakanTurgut/coreweb/blob/main/CoreWeb/Views/Home/Index.cshtml)" file while the project is open and selecting "View in Browser ([Selected Browser](https://www.google.com.tr/))".
 
 If we want, we can also use `\Index.cshtml` of other "[\Views](https://github.com/AtakanTurgut/coreweb/tree/main/CoreWeb/Areas/Admin/Views)" files to see how other pages look.
@@ -10,9 +10,9 @@ If we want, we can also use `\Index.cshtml` of other "[\Views](https://github.co
 However, it's best to start the project with "[CoreWeb\Views\Home\Index.cshtml](https://github.com/AtakanTurgut/coreweb/blob/main/CoreWeb/Views/Home/Index.cshtml)" to run it properly.
 
 Ready-made [bootstrap themes](https://getbootstrap.com/docs/5.3/examples/) were processed and made suitable for the project.
-<br>
+<br />
 You can import the MSSQL database: `CoreWebDB.bacpac`
-<br>
+<br />
 Admin can perform general operations through the panel. <br />
 <ul>
   <li>The website is accessible.</li>
@@ -24,7 +24,7 @@ Admin can perform general operations through the panel. <br />
   <li>Admin can perform operations related to Posts and list all Posts. Can add, delete, edit Posts.</li>
   <li>Admin can perform operations related to Sliders and list all Sliders. Can add, delete, edit Sliders.</li>
 </ul>  
-<br>
+<br />
 Use this user name and password for the admin page.
 
                 Email    : admin@coreweb.net
@@ -35,7 +35,9 @@ The project runs on "[localhost:?/](https://localhost:44329/)".
 ---- 
 ### Projects    =>    Reference Manager
 Data Access Layer (DAL) => Entities
+<br />
 Business Layer (BL)     => DAL + Entities
+<br />
 CoreWeb (Presentation)  => BL + Entities
 
 ---- 
@@ -53,7 +55,6 @@ app.UseAuthorization();     //  Authorization control procedures  ->  Yetki kont
 ## Used Packages
 
 ### Client-Side Library -> Manage Client-Side Libraries
-![](/pictures/clientside.png)
 - Some packages can be installed from the "[Manage Client-Side Libraries](https://learn.microsoft.com/en-us/aspnet/core/client-side/libman/libman-vs?view=aspnetcore-7.0)" with the help of the `Solution Explorer > ProjectName Right Click > Add > Client-Side Library > Library + Install`.
 ```
     >    bootstrap@5.3.1
@@ -61,11 +62,11 @@ app.UseAuthorization();     //  Authorization control procedures  ->  Yetki kont
 ```
     >    jquery@3.7.0
 ```
+![](/pictures/clientside.png)
 ![](/pictures/addclientside.PNG)
 
 ---- 
 ### NuGet Gallery
-![](/pictures/nuget.png)
 - Some packages can be installed from the "[NuGet Gallery](https://www.nuget.org/packages/Microsoft.AspNet.Identity.Core)" with the help of the `Tools > NuGet Package Manager > Package Manager Console`.
 
 - [Microsoft.EntityFrameworkCore 7.0.9](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/7.0.9)
@@ -96,6 +97,7 @@ app.UseAuthorization();     //  Authorization control procedures  ->  Yetki kont
 ```
     PM>  NuGet\Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design -Version 6.0.15
 ```
+![](/pictures/nuget.png)
 ![](/pictures/nugetconsole.PNG)
 
 The `Add-Migration` command is used to create or apply changes to database tables using the Code First approach supported by Entity Framework Core. This command detects the changes made in your model and saves them as a migration. Migrations allow you to evolve your application's database over time.
